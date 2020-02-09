@@ -1,0 +1,19 @@
+---
+# defaults file for elasticsearch
+
+elasticsearch_packages_state: present
+elasticsearch_remove_packages: true
+elasticsearch_enable_service: true
+elasticsearch_enable_selinux: true
+elasticsearch_copy_templates: true
+elasticsearch_firewall_configure: true
+elasticsearch_firewall_rules:
+  - service: ssh
+  - port: 3389
+elasticsearch_users:
+  - user: devops
+    group: docker
+elasticsearch_selinux_booleans:
+  - name: ftp_home_dir
+    state: true
+    persistent: true
