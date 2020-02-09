@@ -8,10 +8,10 @@ elasticsearch: Elasticsearch
 Ansible galaxy:
 ---------------
 
-[https://galaxy.ansible.com/devops-toolbox.elasticsearch](https://galaxy.ansible.com/devops-toolbox.elasticsearch)
+[https://galaxy.ansible.com/devopstoolbox.elasticsearch](https://galaxy.ansible.com/devopstoolbox.elasticsearch)
 
 ```bash
-ansible-galaxy install devops-toolbox.elasticsearch
+ansible-galaxy install devopstoolbox.elasticsearch
 ```
 
 Requirements
@@ -60,7 +60,7 @@ Example Playbook
   tasks:
     - name: elasticsearch is configured
       import_role:
-        name: devops-toolbox.elasticsearch
+        name: devopstoolbox.elasticsearch
       vars:
         elasticsearch_packages_state: present
         elasticsearch_remove_packages: true
@@ -89,4 +89,4 @@ MIT
 Author Information
 ------------------
 
-- [Mihai Criveti](https://www.linkedin.com/in/devops-toolbox.)
+- [Mihai Criveti](https://www.linkedin.com/in/devopstoolbox.)
